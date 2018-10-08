@@ -48,6 +48,8 @@ describe "Simon says" do
     end
   end
 
+################################
+
   describe "start_of_word" do
     it "returns the first letter" do
       expect(start_of_word("hello", 1)).to eq("h")
@@ -74,6 +76,8 @@ describe "Simon says" do
       expect(first_word("oh dear")).to eq("oh")
     end
   end
+
+##############################################
 
   describe "titleize" do
     it "capitalizes a word" do
