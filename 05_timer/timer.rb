@@ -7,6 +7,6 @@ def time_string (seconds)
 	elsif seconds < 600 && seconds%60 < 10
 		"00:0#{seconds / 60}:0#{seconds%60}"
 	else
-		"0#{seconds/3600}:0#{seconds%3600/60}:40"
+		"0#{seconds/3600}:0#{seconds%3600/60}:#{seconds%3600%60}"
 	end
 end

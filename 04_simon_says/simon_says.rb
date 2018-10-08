@@ -7,6 +7,7 @@ def shout (x)
 	x.upcase
 end
 
+# si le nombre de répétions n'est pas spécifié, on répère b = 2 fois (argument par défaut), sinon on répère b fois
 def repeat (x, b=2)
 	 #x << " " + x
 	 #x.concat(' #{x}')

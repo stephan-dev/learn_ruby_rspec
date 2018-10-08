@@ -18,6 +18,7 @@ end
 ########################################
 
 def reverse_upcase_noLTA(string)
+	# trim : on remplace L ou T ou A par une chaîne vide
 	string.reverse.upcase.tr('LTA', '')
 end
 
@@ -31,7 +32,9 @@ end
 
 def magic_array (array)
 	a = array.flatten.map { |x| x*2 }
+	# le reste d'une division par 3 des multiples de 3 est égal à 0
 	b = a.reject {|y| y%3==0}
+	# uniq permet de supprimer les doublons
 	return b.sort.uniq
 
 end

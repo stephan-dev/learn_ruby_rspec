@@ -1,5 +1,3 @@
-#write your code here
-
 
 def ftoc(f)
 	(f - 32) * 5/9
